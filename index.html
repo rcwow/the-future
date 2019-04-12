@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <title>Mt CSS Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="javascript/jsScript.js"></script>
+    <script type="text/javascript" src="javascript/forms.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="calc.html">Calculator</a></li>
+            <li class="topnav-right"><a href="#signup">Sign Up</a></li>
+            <li class="topnav-right"><a href="#signin">Sign In</a></li>
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">
+                    &#9776;</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="section-1-gradient">
+        <div class="row">
+            <div class="col-6">
+                <div class="leftside-col">
+                    <h1 class="large">Crazy Radness</h1>
+                    <h1 class="large">Made for developers</h1>
+                </div>
+                <form>
+                    <div class="leftside-col">
+                        <h2>UserName</h2>
+                        <input class="inputBox" type="text" placeholder="enter your name">
+                        <h2>Password</h2>
+                        <input class="inputBox" type="text" placeholder="enter password">
+                    </div>
+                </form>
+            </div>
+           
+
+            <!-- Embedded Video
+            <div class="col-6">
+                <div class="rightside-col">
+                    <div class="videocontainer">
+                        <iframe class="iFrames" width="560" height="315" src="https://www.youtube.com/embed/8cP4bWzBd1A?start=97" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+-->
+        </div>
+    </div>
+
+    <header>
+        <h1 class="section2Header">The Standards of Awesomeness</h1>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="devIcon.png">
+                    </div>
+                    <label>Chat with Me</label>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="devIcon.png">
+                    </div>
+                    <label>Learn to Code</label>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="devIcon.png">
+                    </div>
+                    <label>Build an Empire</label>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row>">
+        <div class="col-12">
+            <button class="learnMore">Learn More</button>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-7">
+                <article>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </article>
+            </div>
+            <div class="col-5">
+                <div class="slopeIcon">
+                    <img src="iOS-Slope.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footsy">
+        <div class="row">
+            <div class="col-3 mobileStack">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Blogs</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+            <div class="col-3 mobileStack">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Blogs</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+            <div class="col-3 mobileStack">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Blogs</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+            <div class="col-3 mobileStack">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Blogs</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function dropdownMenu() {
+            var x = document.getElementById("dropdownClick");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body></html>
